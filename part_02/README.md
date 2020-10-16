@@ -150,7 +150,7 @@ def tokenize(rules: list, code: str) -> list:
         column = mo.start() - line_start
         text = value
         if kind == 'NUMBER':
-            # Float ot integer
+            # Float or integer
             value = float(value) if '.' in value else int(value)
         elif kind == "STRING":
             # Chop of the two quote marks for the value
@@ -282,7 +282,7 @@ def tokenize(rules: list, code: str) -> list:
         column = mo.start() - line_start
         text = value
         if kind == 'NUMBER':
-            # Float ot integer
+            # Float or integer
             value = float(value) if '.' in value else int(value)
         elif kind == "STRING":
             # Chop of the two quote marks for the value
