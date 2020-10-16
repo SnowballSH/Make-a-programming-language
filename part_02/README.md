@@ -18,7 +18,7 @@ This is an extremely unexpected format.
 We got tabs, new lines, and lots of unwanted spaces, so split() method won't work.
 
 However, with a lexer, we can make it into this clean list:
-```
+```python
 [
 Token(
     type: "IDEN", 
