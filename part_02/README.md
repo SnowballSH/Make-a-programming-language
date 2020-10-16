@@ -1,4 +1,4 @@
-## Part 01
+## Part 02
 
 #### First, we will start from a lexer, or lexical analyzer
 
