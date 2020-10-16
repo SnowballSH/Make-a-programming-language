@@ -20,7 +20,7 @@ g(x, y) = 3x + y
 
 - Call function:
 
-```
+```javascript
 f(1, 2)
 // or,
 f 1, 2
