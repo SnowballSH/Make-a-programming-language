@@ -315,7 +315,7 @@ class LexerRules:
 
     LPAREN = ('LPAREN', r'\(')
     RPAREN = ('RPAREN', r'\)')
-    ASSIGN = ('ASSIGN', r'=')
+    EQ = ('EQ', r'=')
 
     NEWLINE = ('NEWLINE', r'[\r\n]+')
     SKIP = ('SKIP', r'[ \t]+')
@@ -329,7 +329,7 @@ class LexerRules:
             OP,  # Arithmetic operators
             STRING,  # String
 
-            ASSIGN,  # Assignment operator
+            EQ,  # Assignment operator
             LPAREN,
             RPAREN,
 
@@ -340,15 +340,16 @@ class LexerRules:
 
 
 if __name__ == '__main__':
-    code = """
+    code_ = """
             print(\t"Hello, world!"  )
             a_09 = 9 + 100
             """
     rule = LexerRules.DEFAULT
 
-    res = tokenize(rule, code)
+    res = tokenize(rule, code_)
 
     print("\n".join(map(repr, res)))
+
 ```
 
 *** 
